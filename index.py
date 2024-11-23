@@ -1,6 +1,6 @@
-from flask import Flask, render_template, request, jsonify
-from flask_socketio import SocketIO, emit
-from transformers import pipeline
+from flask import Flask, render_template, request, jsonify # type: ignore
+from flask_socketio import SocketIO, emit # type: ignore
+from transformers import pipeline # type: ignore
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
